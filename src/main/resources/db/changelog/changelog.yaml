@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20240528-01
+      author: cash
+      context: dev
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            splitStatements: true
+            path: /db/changelog/script/20240528-01.sql
+            stripComments: true
+
+  - changeSet:
+      id: 20240528-02
+      author: cash
+      context: dev
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            splitStatements: true
+            path: /db/changelog/script/20240528-02.sql
+            stripComments: true
+
+  - changeSet:
+      id: 20240528-03
+      author: cash
+      context: prod
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            splitStatements: true
+            path: /db/changelog/script/20240528-03.sql
+            stripComments: true
+
+  - changeSet:
+      id: 20240528-04
+      author: cash
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            splitStatements: true
+            path: /db/changelog/script/20240528-04.sql
+            stripComments: true
